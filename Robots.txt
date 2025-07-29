@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://sergey439.github.io/Karaganda_help/sitemap.xml
