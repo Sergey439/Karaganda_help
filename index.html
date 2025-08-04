@@ -12,14 +12,13 @@
     }
 
     header {
-      background-color: #ffd700; /* единый цвет фона */
-      padding: 10px 20px;
+      background-color: #ffd700;
+      padding: 15px 20px;
     }
 
-    .top-bar {
+    .top-row {
       display: flex;
       align-items: center;
-      justify-content: flex-start;
     }
 
     .logo {
@@ -33,18 +32,13 @@
       color: #333;
     }
 
-    .bottom-bar {
-      display: flex;
-      justify-content: flex-end;
-      padding-top: 10px;
-    }
-
     .burger {
       width: 30px;
       height: 22px;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
+      margin-top: 15px;
       cursor: pointer;
     }
 
@@ -54,13 +48,16 @@
       border-radius: 2px;
     }
 
-    @media (max-width: 768px) {
-      .title {
-        font-size: 20px;
+    @media (min-width: 769px) {
+      /* ПК: всё в одну строку */
+      header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
       }
 
-      .logo {
-        height: 35px;
+      .burger {
+        margin-top: 0;
       }
     }
   </style>
@@ -68,18 +65,17 @@
 <body>
 
   <header>
-    <div class="top-bar">
+    <div class="top-row">
       <img src="IMG_20250804_203902_146.jpg" alt="Логотип" class="logo">
       <div class="title">Свой мастер</div>
     </div>
-    <div class="bottom-bar">
-      <div class="burger">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
+    <div class="burger">
+      <span></span>
+      <span></span>
+      <span></span>
     </div>
   </header>
 
 </body>
 </html>
+
