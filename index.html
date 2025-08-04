@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ЭЛЕКТРИК КАРАГАНДА</title>
+  <title>Свой Мастер</title>
   <style>
     body {
       margin: 0;
@@ -12,33 +12,18 @@
     }
 
     header {
-      background-color: #ffd700;
+      background-color: #fec606; /* Цвет, как у логотипа */
       padding: 15px 20px;
-    }
-
-    .top-row {
-      display: flex;
-      align-items: center;
-    }
-
-    .logo {
-      height: 40px;
-      margin-right: 10px;
-    }
-
-    .title {
-      font-size: 24px;
-      font-weight: bold;
-      color: #333;
+      text-align: center;
     }
 
     .burger {
       width: 30px;
       height: 22px;
+      margin: 0 auto 15px;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-      margin-top: 15px;
       cursor: pointer;
     }
 
@@ -48,16 +33,42 @@
       border-radius: 2px;
     }
 
-    @media (min-width: 769px) {
-      /* ПК: всё в одну строку */
+    .logo {
+      width: 80px;
+      height: auto;
+      margin-bottom: 10px;
+    }
+
+    .title {
+      font-size: 20px;
+      font-weight: bold;
+      color: #333;
+    }
+
+    @media (min-width: 768px) {
       header {
         display: flex;
-        justify-content: space-between;
         align-items: center;
+        justify-content: space-between;
+        text-align: left;
       }
 
       .burger {
-        margin-top: 0;
+        margin: 0;
+      }
+
+      .logo-title {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+      }
+
+      .logo {
+        margin: 0;
+      }
+
+      .title {
+        font-size: 24px;
       }
     }
   </style>
@@ -65,17 +76,16 @@
 <body>
 
   <header>
-    <div class="top-row">
-      <img src="IMG_20250804_203902_146.jpg" alt="Логотип" class="logo">
-      <div class="title">ЭЛЕКТРИК | КАРАГАНДА</div>
-    </div>
     <div class="burger">
       <span></span>
       <span></span>
       <span></span>
     </div>
+    <div class="logo-title">
+      <img src="IMG_20250804_203902_146.jpg" alt="Логотип" class="logo">
+      <div class="title">ЭЛЕКТРИК | КАРАГАНДА</div>
+    </div>
   </header>
 
 </body>
 </html>
-
