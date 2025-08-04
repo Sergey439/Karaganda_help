@@ -12,19 +12,41 @@
     }
 
     header {
-      background-color: #fec606; /* Цвет, как у логотипа */
+      background-color: #ffd700;
       padding: 15px 20px;
-      text-align: center;
+    }
+
+    .top-row {
+      display: flex;
+      align-items: center;
+    }
+
+    .logo {
+      height: 40px;
+      margin-right: 10px;
+    }
+
+    .title {
+      font-size: 24px;
+      font-weight: bold;
+      color: #333;
+    }
+
+    .content {
+      padding: 20px;
+      position: relative;
     }
 
     .burger {
       width: 30px;
       height: 22px;
-      margin: 0 auto 15px;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
       cursor: pointer;
+      position: absolute;
+      top: 0;
+      left: 0;
     }
 
     .burger span {
@@ -33,42 +55,9 @@
       border-radius: 2px;
     }
 
-    .logo {
-      width: 80px;
-      height: auto;
-      margin-bottom: 10px;
-    }
-
-    .title {
-      font-size: 20px;
-      font-weight: bold;
-      color: #333;
-    }
-
-    @media (min-width: 768px) {
+    @media (min-width: 769px) {
       header {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        text-align: left;
-      }
-
-      .burger {
-        margin: 0;
-      }
-
-      .logo-title {
-        display: flex;
-        align-items: center;
-        gap: 15px;
-      }
-
-      .logo {
-        margin: 0;
-      }
-
-      .title {
-        font-size: 24px;
+        justify-content: flex-start;
       }
     }
   </style>
@@ -76,16 +65,22 @@
 <body>
 
   <header>
+    <div class="top-row">
+      <img src="IMG_20250804_203902_146.jpg" alt="Логотип" class="logo">
+      <div class="title">Свой мастер</div>
+    </div>
+  </header>
+
+  <div class="content">
     <div class="burger">
       <span></span>
       <span></span>
       <span></span>
     </div>
-    <div class="logo-title">
-      <img src="IMG_20250804_203902_146.jpg" alt="Логотип" class="logo">
-      <div class="title">ЭЛЕКТРИК | КАРАГАНДА</div>
-    </div>
-  </header>
+    <!-- Здесь можно разместить основной контент сайта -->
+  </div>
 
 </body>
+</html>
+
 </html>
